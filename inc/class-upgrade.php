@@ -6,12 +6,12 @@
  */
 
 /**
- * This code handles the option upgrades
+ * This code handles the option upgrades.
  */
 class WPSEO_Upgrade {
 
 	/**
-	 * Class constructor
+	 * Class constructor.
 	 */
 	public function __construct() {
 		$version = WPSEO_Options::get( 'version' );
@@ -136,7 +136,7 @@ class WPSEO_Upgrade {
 		$upsell_notice->set_upgrade_notice();
 
 		/**
-		 * Filter: 'wpseo_run_upgrade' - Runs the upgrade hook which are dependent on Yoast SEO
+		 * Filter: 'wpseo_run_upgrade' - Runs the upgrade hook which are dependent on Yoast SEO.
 		 *
 		 * @api        string - The current version of Yoast SEO
 		 */
@@ -173,7 +173,7 @@ class WPSEO_Upgrade {
 	}
 
 	/**
-	 * Run the Yoast SEO 1.5 upgrade routine
+	 * Run the Yoast SEO 1.5 upgrade routine.
 	 *
 	 * @param string $version Current plugin version.
 	 */
@@ -184,12 +184,12 @@ class WPSEO_Upgrade {
 	}
 
 	/**
-	 * Moves options that moved position in WPSEO 2.0
+	 * Moves options that moved position in WPSEO 2.0.
 	 */
 	private function upgrade_20() {
 		/**
 		 * Clean up stray wpseo_ms options from the options table, option should only exist in the sitemeta table.
-		 * This could have been caused in many version of Yoast SEO, so deleting it for everything below 2.0
+		 * This could have been caused in many version of Yoast SEO, so deleting it for everything below 2.0.
 		 */
 		delete_option( 'wpseo_ms' );
 
@@ -224,7 +224,7 @@ class WPSEO_Upgrade {
 	}
 
 	/**
-	 * Performs upgrade functions to Yoast SEO 2.2
+	 * Performs upgrade functions to Yoast SEO 2.2.
 	 */
 	private function upgrade_22() {
 		// Unschedule our tracking.
@@ -234,7 +234,7 @@ class WPSEO_Upgrade {
 	}
 
 	/**
-	 * Schedules upgrade function to Yoast SEO 2.3
+	 * Schedules upgrade function to Yoast SEO 2.3.
 	 */
 	private function upgrade_23() {
 		add_action( 'wp', array( $this, 'upgrade_23_query' ), 90 );
@@ -242,7 +242,7 @@ class WPSEO_Upgrade {
 	}
 
 	/**
-	 * Performs upgrade query to Yoast SEO 2.3
+	 * Performs upgrade query to Yoast SEO 2.3.
 	 */
 	public function upgrade_23_query() {
 		$wp_query = new WP_Query( 'post_type=any&meta_key=_yoast_wpseo_sitemap-include&meta_value=never&order=ASC' );

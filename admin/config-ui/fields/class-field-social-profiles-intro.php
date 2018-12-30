@@ -6,7 +6,7 @@
  */
 
 /**
- * Class WPSEO_Config_Field_Social_Profiles_Intro
+ * Class WPSEO_Config_Field_Social_Profiles_Intro.
  */
 class WPSEO_Config_Field_Social_Profiles_Intro extends WPSEO_Config_Field {
 

@@ -194,7 +194,7 @@ class WPSEO_Product_Upsell_Notice {
 	}
 
 	/**
-	 * Returns the set options
+	 * Returns the set options.
 	 *
 	 * @return mixed|void
 	 */

@@ -6,7 +6,7 @@
  */
 
 /**
- * Class WPSEO_JSON_LD_Test
+ * Class WPSEO_JSON_LD_Test.
  */
 class WPSEO_JSON_LD_Test extends WPSEO_UnitTestCase {
 
@@ -18,7 +18,7 @@ class WPSEO_JSON_LD_Test extends WPSEO_UnitTestCase {
 	private static $class_instance;
 
 	/**
-	 * Instantiate our class
+	 * Instantiate our class.
 	 */
 	public static function setUpBeforeClass() {
 		parent::setUpBeforeClass();

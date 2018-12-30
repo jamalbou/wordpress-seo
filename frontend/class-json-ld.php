@@ -6,7 +6,7 @@
  */
 
 /**
- * Class WPSEO_JSON_LD
+ * Class WPSEO_JSON_LD.
  *
  * Outputs schema code specific for Google's JSON LD stuff.
  *
@@ -103,7 +103,7 @@ class WPSEO_JSON_LD implements WPSEO_WordPress_Integration {
 	}
 
 	/**
-	 * Outputs code to allow recognition of page's position in the site hierarchy
+	 * Outputs code to allow recognition of page's position in the site hierarchy.
 	 *
 	 * @link https://developers.google.com/search/docs/data-types/breadcrumb
 	 *

@@ -25,7 +25,7 @@ class WPSEO_Admin_Init {
 	private $asset_manager;
 
 	/**
-	 * Class constructor
+	 * Class constructor.
 	 */
 	public function __construct() {
 		$GLOBALS['wpseo_admin'] = new WPSEO_Admin();
@@ -93,7 +93,7 @@ class WPSEO_Admin_Init {
 	}
 
 	/**
-	 * Notify about the default tagline if the user hasn't changed it
+	 * Notify about the default tagline if the user hasn't changed it.
 	 */
 	public function tagline_notice() {
 		$query_args    = array(
@@ -126,7 +126,7 @@ class WPSEO_Admin_Init {
 	}
 
 	/**
-	 * Add an alert if the blog is not publicly visible
+	 * Add an alert if the blog is not publicly visible.
 	 */
 	public function blog_public_notice() {
 
@@ -157,7 +157,7 @@ class WPSEO_Admin_Init {
 	}
 
 	/**
-	 * Display notice to disable comment pagination
+	 * Display notice to disable comment pagination.
 	 */
 	public function page_comments_notice() {
 
@@ -189,7 +189,7 @@ class WPSEO_Admin_Init {
 	}
 
 	/**
-	 * Returns whether or not the site has the default tagline
+	 * Returns whether or not the site has the default tagline.
 	 *
 	 * @return bool
 	 */
@@ -205,7 +205,7 @@ class WPSEO_Admin_Init {
 	}
 
 	/**
-	 * Show alert when the permalink doesn't contain %postname%
+	 * Show alert when the permalink doesn't contain %postname%.
 	 */
 	public function permalink_notice() {
 
@@ -237,7 +237,7 @@ class WPSEO_Admin_Init {
 	}
 
 	/**
-	 * Are page comments enabled
+	 * Are page comments enabled.
 	 *
 	 * @return bool
 	 */
@@ -263,7 +263,7 @@ class WPSEO_Admin_Init {
 	}
 
 	/**
-	 * Build compatibility problem notification
+	 * Build compatibility problem notification.
 	 *
 	 * @return Yoast_Notification
 	 */
@@ -362,7 +362,7 @@ class WPSEO_Admin_Init {
 	}
 
 	/**
-	 * Build Yoast SEO compatibility problem notification
+	 * Build Yoast SEO compatibility problem notification.
 	 *
 	 * @param string $name   The plugin name to use for the unique ID.
 	 * @param array  $plugin The plugin to retrieve the data from.
@@ -437,7 +437,7 @@ class WPSEO_Admin_Init {
 	}
 
 	/**
-	 * Check if the user has dismissed the given notice (by $notice_name)
+	 * Check if the user has dismissed the given notice (by $notice_name).
 	 *
 	 * @param string $notice_name The name of the notice that might be dismissed.
 	 *
@@ -584,7 +584,7 @@ class WPSEO_Admin_Init {
 	}
 
 	/**
-	 * See if we should start our XML Sitemaps Admin class
+	 * See if we should start our XML Sitemaps Admin class.
 	 */
 	private function load_xml_sitemaps_admin() {
 		if ( WPSEO_Options::get( 'enable_xml_sitemap', false ) ) {
@@ -593,7 +593,7 @@ class WPSEO_Admin_Init {
 	}
 
 	/**
-	 * Check if the site is set to be publicly visible
+	 * Check if the site is set to be publicly visible.
 	 *
 	 * @return bool
 	 */
@@ -653,7 +653,7 @@ class WPSEO_Admin_Init {
 	}
 
 	/**
-	 * Check if the permalink uses %postname%
+	 * Check if the permalink uses %postname%.
 	 *
 	 * @return bool
 	 */
